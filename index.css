@@ -1,0 +1,32 @@
+.main_div{
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+}
+.main_span{
+    font-family: 'Lucida Sans Typewriter',serif;
+    font-size: 30px;
+    white-space: nowrap;
+    border-right: tomato solid 2px;
+    overflow: hidden;
+    width: 0%;
+    letter-spacing: 2px;
+    animation:
+    typing 3.5s steps(22,end) forwards,
+    blink-cursor 0.5s step-end infinite,
+    backspace 1s steps(22,end) 3.9s forwards;
+}
+@keyframes typing{
+    from{width:0%}
+    to{width:100%}
+}
+@keyframes blink-cursor{
+    from,to {border-right-color: transparent;}
+    50% {border-right-color: tomato;}
+}
+@keyframes backspace{
+    from{width:100%}
+    to{width:0%}
+}
