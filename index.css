@@ -5,7 +5,7 @@
     position: fixed;
     transform: translate(-50%,-50%);
 }
-.main_span{
+#main_span{
     font-family: 'Lucida Sans Typewriter',serif;
     font-size: 30px;
     white-space: nowrap;
@@ -13,10 +13,10 @@
     overflow: hidden;
     width: 0%;
     letter-spacing: 2px;
-    animation:
+    /*animation:
     typing 3.5s steps(22,end) forwards,
     blink-cursor 0.5s step-end infinite,
-    backspace 1s steps(22,end) 3.9s forwards;
+    backspace 1s steps(22,end) 3.9s forwards;*/
 }
 @keyframes typing{
     from{width:0%}
