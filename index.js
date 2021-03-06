@@ -9,7 +9,7 @@ var sen = text.length;
 function loop(){
     var len = 0;
     len = text[l[0]].length;
-    holder.style.width = String(l[1]*100/len)+'%';
+    holder.innerHTML = text[l[0]].substring(0,l[1]);
     l[1]++;
     if (flag ==1){
         l[1]-=2;
@@ -27,7 +27,6 @@ function loop(){
         flag = 0;
         l[1] = 0;
         l[0]++;
-        holder.innerHTML = text[l[0]];
     }
 }
 var myVar = setInterval(loop, 100);

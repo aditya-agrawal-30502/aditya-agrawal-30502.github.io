@@ -2,19 +2,30 @@
     color: white;
     top: 50%;
     left: 50%;
-    position: fixed;
+    position: absolute;
     transform: translate(-50%,-50%);
+}
+html,body{
+    height:200%;
+    margin: 0%;
 }
 #main_span{
     font-family: 'Lucida Sans Typewriter',serif;
     font-size: 30px;
-    white-space: nowrap;
     border-right: tomato solid 2px;
     overflow: hidden;
-    width: 0%;
+    min-width: 0%;
     letter-spacing: 2px;
     animation:
     blink-cursor 0.5s step-end infinite
+}
+.first{
+    height:50%;
+    background-color: black;
+}
+.second{
+    top:50%;
+    max-height: 50%;
 }
 @keyframes blink-cursor{
     from,to {border-right-color: transparent;}
