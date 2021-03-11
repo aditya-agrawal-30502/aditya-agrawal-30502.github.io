@@ -25,7 +25,16 @@ html,body{
 }
 .second{
     top:50%;
-    max-height: 50%;
+    height: 50%;
+    background-color: BLACK;
+    color: whitesmoke;
+    font-family: 'Lucida Sans Typewriter',serif;
+    font-size: 20px;
+}
+#myVideo{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
 }
 @keyframes blink-cursor{
     from,to {border-right-color: transparent;}
