@@ -36,6 +36,32 @@ html,body{
     min-height: 100%;
     position: fixed;
 }
+.button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    display: inline-flex;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+}
+.button:hover{
+    background-color: tomato;
+    color: white;
+}
+img{
+    margin-left: 1%;
+    display: flex;
+}
+.text{
+    display: flex;
+}
+
 @keyframes blink-cursor{
     from,to {border-right-color: transparent;}
     50% {border-right-color: tomato;}
