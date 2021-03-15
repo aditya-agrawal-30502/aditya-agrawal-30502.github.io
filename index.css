@@ -5,9 +5,11 @@
     position: absolute;
     transform: translate(-50%,-50%);
 }
+html{
+    scroll-behavior: smooth;
+}
 html,body{
     height:140%;
-    margin: 1%;
 }
 #main_span{
     font-family: 'Lucida Sans Typewriter',serif;
@@ -74,16 +76,20 @@ h2{
 .icon{
     max-height: 50px;
     margin-right: 10px;
+    transition-duration: 0.2s;
+}
+.icon:hover{
+    transform: scale(1.5);
 }
 .social{
     display: flex;
     position: absolute;
-    top: 170%;
-    left:2%;
-    transform: translate(0%,-100%);
+    left:0%;
+    transform: translate(0%,10%);
     align-content: flex-end;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    height:40%;
 }
 .c{
     color: white;
@@ -93,6 +99,44 @@ h2{
     display: flex;
     margin-left: 1%;
     
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+.legend{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.button2{
+    border: solid white 2px;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    display: inline-flex;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 30px;
+    transition-duration: 0.2s;
+}
+.button2:hover{
+    background-color: WHITE;
+    color: black;
+}
+.capsule{
+        min-height: 45%;
+        transition-duration: 0.4s;
+        transition-delay: 0.1s;
+        transform-style: ea;
+        border-radius: 7px;
+        width: 100%;
+}
+.capsule:hover{
+    background-color: rgb(39, 39, 39);
 }
 @keyframes blink-cursor{
     from,to {border-right-color: transparent;}

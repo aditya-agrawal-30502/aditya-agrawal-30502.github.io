@@ -9,14 +9,19 @@
 </head>
 <body bgcolor="black">
     <div class = "first">
+    <div class = 'legend'>
+        <div><a href = '#about' class="button2">About</a></div>
+        <div><a href = '#contact'class='button2'>Contact</a></div>
+    </div>
     <div class = 'main_div'>
         <center><h3 id = 'main_span'>Welcome to my webpage.</h3></center>
     </div>
     </div>
     <div class="second">
-            <h2>About me:</h2>
+        <div class="capsule">
+            <h2><a id = 'about'></a>About me:</h2>
             <div class = 'parent'>
-                <img src="pic.jpg" />
+                <img src="pic.jpg" class = 'pp1'/>
                 <div class="sub-parent">
                     <div class="text">
                         Hello I am Aditya Agrawal. I am a student at Birla Institute of Technology and Science, Goa campus.<br/>
@@ -27,14 +32,17 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     <div class="social">
-        <div class="c"><h2>Contact me:</h2></div>
+        <div class="capsule">
+        <div class="c"><h2><a id='contact'></a>Contact me:</h2></div>
         <div class="holder">
         <a href="https://github.com/aditya-agrawal-30502"><img src="github.png" alt="Github" class="icon"></a>
         <a href="https://www.linkedin.com/in/aditya-agarwal-9aba24208/"><img src="linkedin.png" alt="Linkedin" class="icon"></a>
         <a href="mailto: f20201381@goa.bits-pilani.ac.in"><img src="gmail.png" alt="email" class="icon"></a>
         </div>
+    </div>
+    </div>
     </div>
     <script src = "index.js"></script>
 </body>
