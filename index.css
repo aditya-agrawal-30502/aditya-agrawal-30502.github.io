@@ -28,8 +28,12 @@ html,body{
     height: 50%;
     background-color: BLACK;
     color: whitesmoke;
-    font-family: 'Lucida Sans Typewriter',serif;
     font-size: 20px;
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+    width:60%;
 }
 #myVideo{
     min-width: 100%;
@@ -57,11 +61,20 @@ html,body{
 img{
     margin-left: 1%;
     display: flex;
+    min-width: 0px;
+    min-height: 0px;
+    height: fit-content;
 }
 .text{
     display: flex;
 }
-
+.sub-parent{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin-left: 1%;
+}
 @keyframes blink-cursor{
     from,to {border-right-color: transparent;}
     50% {border-right-color: tomato;}
