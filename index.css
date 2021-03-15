@@ -6,8 +6,8 @@
     transform: translate(-50%,-50%);
 }
 html,body{
-    height:200%;
-    margin: 0%;
+    height:140%;
+    margin: 1%;
 }
 #main_span{
     font-family: 'Lucida Sans Typewriter',serif;
@@ -74,6 +74,29 @@ img{
 }
 h2{
     margin-left: 1%;
+}
+.icon{
+    max-height: 50px;
+    margin-right: 10px;
+}
+.social{
+    display: flex;
+    position: absolute;
+    top: 170%;
+    left:2%;
+    transform: translate(0%,-100%);
+    align-content: flex-end;
+    flex-direction: column;
+    width: 50%;
+}
+.c{
+    color: white;
+    font-size: 20px;
+}
+.holder{
+    display: flex;
+    margin-left: 1%;
+    
 }
 @keyframes blink-cursor{
     from,to {border-right-color: transparent;}
