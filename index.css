@@ -1,7 +1,7 @@
 .main_div{
     color: white;
-    top: 50%;
     left: 50%;
+    top: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
 }
@@ -23,12 +23,10 @@ html,body{
 }
 .first{
     height:50%;
-    background-color: black;
 }
 .second{
     top:50%;
     height: 50%;
-    background-color: BLACK;
     color: whitesmoke;
     font-size: 20px;
 }
@@ -83,7 +81,6 @@ h2{
 }
 .social{
     display: flex;
-    position: absolute;
     left:0%;
     transform: translate(0%,10%);
     align-content: flex-end;
@@ -131,15 +128,40 @@ a{
         min-height: 45%;
         transition-duration: 0.4s;
         transition-delay: 0.1s;
-        transform-style: ea;
         border-radius: 7px;
         width: 100%;
 }
 .capsule:hover{
-    background-color: rgb(39, 39, 39);
+    background-color: rgba(255,255,255,0.1);
 }
+#bg{
+    left:0%;
+    top: 0%;
+    height: 100%;
+    background-color: black;
+    animation: bg_change 10s infinite;
+    animation-play-state: paused;
+}
+.palate_test{
+    border: solid white 2px;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    display: inline-flex;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 30px;
+}
+
 @keyframes blink-cursor{
     from,to {border-right-color: transparent;}
     50% {border-right-color: tomato;}
+}
+@keyframes bg_change{
+    from,to {background-color: black;}
+    25%,75% {background-color: #002A3D;}
+    50% {background-color: #1F4738;}
 }
 

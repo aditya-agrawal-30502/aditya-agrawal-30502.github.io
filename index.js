@@ -6,6 +6,7 @@ var flag = 0;
 var c = 0;
 var f = 0;
 var sen = text.length;
+var bod = document.getElementById('bg')
 function loop(){
     var len = 0;
     len = text[l[0]].length;
@@ -28,5 +29,11 @@ function loop(){
         l[1] = 0;
         l[0]++;
     }
+}
+function ani_r(){
+    bod.style.animationPlayState = 'running';
+}
+function ani_p(){
+    bod.style.animationPlayState = 'paused';
 }
 var myVar = setInterval(loop, 100);
