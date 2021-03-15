@@ -35,11 +35,7 @@ html,body{
     justify-content: space-between;
     width:60%;
 }
-#myVideo{
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-}
+
 .button {
     background-color: white;
     border: none;
