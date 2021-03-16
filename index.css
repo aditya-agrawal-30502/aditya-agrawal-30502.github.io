@@ -67,6 +67,7 @@ img{
 .sub-parent{
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
 }
 h2{
     margin-left: 1%;
